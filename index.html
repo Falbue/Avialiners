@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
 	<title>Landing page</title>
 </head>
 <body>
@@ -45,14 +46,16 @@
 					<div class="div_num_ticket">
 						<input class="input_ticket" type="text" placeholder="Билеты:" disabled>
 						<div>
-							<button class="button_booking">+</button>
-							<button class="button_booking">-</button>
+							<button class="button_booking" onclick="addTicket()">+</button>
+							<button class="button_booking" onclick="removeTicket()">-</button>
 						</div>
-						<input type="number" disabled style="width: 50px;">
+						<input type="number" id="ticketCount" min="1" max="8" style="width: 50px;" title="1">
 					</div>
 					<button onclick="document.location='search.html'">Найти</button>
 				</div>
 			</div>
+
+
 
 
 			<div class="card" style="margin-top: 50px;">
@@ -114,7 +117,7 @@
 		<p class="footer_text">© 2023 Avialiners</p>
 		<a class="footer_text map">Карта сайта</a>
 	</footer>
-	<!-- Xtrcv -->
+
 
 </body>
 </html>
