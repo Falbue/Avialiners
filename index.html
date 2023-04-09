@@ -12,21 +12,24 @@
 		<div class="logo">
 			<img class="logo_img" src="lib/logo.png">
 		</div>
-
-		
-		<p class="logo_text">Avialiners</p>
-
+		<div>
+			<p class="logo_text">Avialiners</p>
+			<div class="line"></div>
+		</div>
 		<nav>
-			<li class="header_link">Акции</li>
-			<li class="header_link">Поиск</li>
-			<li class="header_link">Регистрация на рейс</li>
+			<div>
+				<a class="header_link" href="action.html">Акции</a>
+			</div>
+			<div>
+				<a class="header_link" href="search.html">Поиск</a>
+			</div>
+			<div>
+				<a class="header_link" href="registration.html">Регистрация на рейс</a>
+			</div>
 		</nav>
 	</header>
 
-
-
 	<main>
-
 		<div class="card_vertical">
 			<div class="card">
 				<p class="card_title">Поиск перелётов</p>
@@ -39,21 +42,20 @@
 						<input class="input_search" type="text" placeholder="Куда:">
 						<input class="input_search" type="date">
 					</div>
-					<div class="div_num_ticket card_data_input">
+					<div class="div_num_ticket">
 						<input class="input_ticket" type="text" placeholder="Билеты:" disabled>
-						<div class="plus_minus">
-							<button class="btn_search">+</button>
-							<button class="btn_search">-</button>
+						<div>
+							<button class="button_booking">+</button>
+							<button class="button_booking">-</button>
 						</div>
-						<input type="number" disabled>
+						<input type="number" disabled style="width: 50px;">
 					</div>
 					<button onclick="document.location='search.html'">Найти</button>
 				</div>
 			</div>
 
 
-
-			<div class="card">
+			<div class="card" style="margin-top: 50px;">
 				<p class="card_title">Визуализация</p>
 				<div class="card_data">
 					<div class="graphics">
@@ -71,7 +73,7 @@
 
 
 
-		<div class="card" style="width: 51.4%;">
+		<div class="card" style="width: 60%;">
 			<p class="card_title">Акции</p>
 			<div class="card_data">
 				<div class="div_action">
@@ -91,12 +93,13 @@
 					<img class="img_action" src="lib/actions/nurai.png">
 					<p class="txt_action">Пляж Zaya Nurai является одним из самых роскошных пляжей на планете. Это приватный остров, расположенный в 10 минутах езды на лодке от Саадийат Айленд в Абу-Даби. Пляж имеет кристально-чистую воду, белый песок и прекрасный вид на Персидский залив.</p>
 				</div>
-			</div>
-			<button>Подробнее</button>
-			<div class="activity">
-				<p style="width: 100%; font-size: 36px;">Подписаться:</p>
-				<input type="email" placeholder="E-mail:">
-				<button>Подписаться</button>
+				<button style="width: fit-content;";>Подробнее</button>
+				<hr>
+				<div class="activity">
+					<p class="activity_text"></b>Подписаться:</p>
+					<input type="email" placeholder="E-mail:">
+					<button style="margin-left: 25px;">Подписаться</button>
+				</div>
 			</div>
 		</div>
 

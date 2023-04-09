@@ -12,16 +12,23 @@
 		<div class="logo">
 			<img class="logo_img" src="lib/logo.png">
 		</div>
-
-		
-		<p class="logo_text">Avialiners</p>
-
+		<div>
+			<a class="logo_text" href="index.html">Avialiners</a>
+			<div class="line"></div>
+		</div>
 		<nav>
-			<li class="header_link">Акции</li>
-			<li class="header_link">Поиск</li>
-			<li class="header_link">Регистрация на рейс</li>
+			<div>
+				<a class="header_link" href="action.html">Акции</a>
+			</div>
+			<div>
+				<a class="header_link" href="search.html">Поиск</a>
+			</div>
+			<div>
+				<a class="header_link" href="registration.html">Регистрация на рейс</a>
+			</div>
 		</nav>
 	</header>
+
 
 
 
@@ -57,13 +64,13 @@
 			<p class="card_title">Данные пассажиров</p>
 			<div class="card_data">
 				<div class="card_data_input">
-					<input class="input_search" type="text" name="">
-					<input type="" name="">
+					<input class="input_search" type="text" placeholder="Имя:">
+					<input type="text" placeholder="Фамилия:">
 				</div>
 				<div>
 					<div class="card_data_input">
-						<input class="input_search" type="text" name="">
-						<input type="" name="">
+						<input class="input_search" type="date" placeholder="Дата рождения:">
+						<input type="" placeholder="Номер документа:">
 					</div>
 				</div>
 
@@ -81,7 +88,7 @@
 					</div>
 					<div class="booking_activity">
 						<p class="booking_price"><b>Итого:</b> XXX XXX</p>
-						<button>Оформить</button>
+						<button onclick="document.location='booking_management.html'">Оформить</button>
 					</div>
 				</div>
 			</div>
