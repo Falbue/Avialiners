@@ -5,6 +5,9 @@ body{
 	background-color: #F5F5F5;
 	font-size: 26px;
 }
+p{
+	margin: 0;
+}
 
 header{
 	display: flex;
@@ -87,9 +90,9 @@ footer{
 	flex-direction: column;
 	align-items: center;
 
-	padding-bottom: 7.4%;
 	padding-left: 1.314%;
 	padding-right: 1.314%;
+	height: fit-content;
 
 	background-color: white;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -97,6 +100,7 @@ footer{
 }
 
 .card_title{
+	margin-top: 44px;
 	margin-bottom: 64px;
 
 	font-size: 36px;
@@ -253,8 +257,9 @@ input[type=email]{
 
 /*Seat*/
 
-.row_1{
+.row{
 	display: flex;
+	margin-bottom: 24px;
 }
 
 .seat_button{
@@ -263,13 +268,50 @@ input[type=email]{
 	height: 48px;
 	font-size: 36px;
 }
+.seat_enabled{
+	background-color: #21F38E;
+	border: 2px solid #2ABC76;
+}
+.seat_disabled{
+	background-color: #F32160;
+	border: 2px solid #A9244C;
+}
+.seat_num{
+	background-color: #A6A6A6;
+	border: 2px solid #888686;
+}
+.seat_num_row{
+	color: #A6A6A6;
+	background-color: #FFFFFF;
+	border: 2px solid #888686;
+
+}
 
 .title_row{
+	text-align: center;
 	margin: 0;
+	width: 34px;
 	margin-top: 4%;
 	font-size: 30px;
 	color: #A6A6A6;
 
 	padding-left: 18px;
 	padding-right: 18px;
+}
+
+.notations_1{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+
+.notations_input{
+	display: flex;
+	align-items: center;
+	margin-bottom: 4%;
+
+}
+
+.notations_text{
+	margin-left: 16px;
 }
