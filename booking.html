@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Landing page</title>
+	<title>Booking</title>
 </head>
 <body>
 
@@ -26,28 +26,30 @@
 
 
 	<main>
-		<div class="card">
+		<div class="card booking_card">
 			<p class="card_title">Данные рейса</p>
-			<div>
-				<p>Номер рейса: --- ---</p>
-				<div>
-					<p>Грод вылета: --- ---</p>
-					<p>Аэропорт: --- ---</p>
+			<div class="card_data booking_data">
+				<div class="booking_input">
+					<p style="margin-bottom: 26px;">Номер рейса: XXX XXX</p>
+					<div style="margin-bottom: 26px;">
+						<p>Грод вылета: XXX XXX</p>
+						<p>Аэропорт: XXX XXX</p>
+					</div>
+					<div style="margin-bottom: 26px;">
+						<p>Город назначения: XXX XXX</p>
+						<p>Аэропорт: XXX XXX</p>
+					</div>
 				</div>
-				<div>
-					<p>Город назначения: --- ---</p>
-					<p>Аэропорт: --- ---</p>
-				</div>
-			</div>
 
-			<div>
-				<div>
-					<p>Город назначения: --- ---</p>
-					<p>Аэропорт: --- ---</p>
+				<div class="booking_input">
+					<div style="margin-bottom: 26px;">
+						<p>Город назначения: XXX XXX</p>
+						<p>Аэропорт: XXX XXX</p>
+					</div>
+					<p>Время прибытия: --:--</p>
 				</div>
-				<p>Время прибытия: --:--</p>
+				<p style="padding-left: 25px;"><b>Стоимость:</b> XXX XXX</p>
 			</div>
-			<p></p>
 		</div>
 
 
@@ -77,8 +79,10 @@
 							<button class="button_booking">-</button>
 						</div>
 					</div>
-					<p>Итого: --- ---</p>
-					<button>Оформить</button>
+					<div class="booking_activity">
+						<p class="booking_price"><b>Итого:</b> XXX XXX</p>
+						<button>Оформить</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -91,39 +95,6 @@
 		<p class="footer_text">© 2023 Avialiners</p>
 		<a class="footer_text map">Карта сайта</a>
 	</footer>
-
-<script>
-	let passengers = 1;
-	let total = 0;
-	
-	const increasePassengers = () => {
-		passengers++;
-		updatePassengers();
-	}
-	
-	const decreasePassengers = () => {
-		if (passengers > 1) {
-			passengers--;
-			updatePassengers();
-		}
-	}
-	
-	const updatePassengers = () => {
-		const passengerButtons = document.querySelectorAll(".passager_num_buttons button");
-		passengerButtons[0].innerText = passengers;
-		passengerButtons[1].innerText = passengers + 1;
-		
-		calculateTotal();
-	}
-	
-	const calculateTotal = () => {
-		total = passengers * 50;
-		document.querySelector("p.card_data div:nth-child(2)").innerText = `Итого: ${passengers} пассажиры, ${total} рублей`;
-	}
-	
-	document.querySelector(".frame_booking_buttons button:first-of-type").addEventListener("click", increasePassengers);
-	document.querySelector(".frame_booking_buttons button:last-of-type").addEventListener("click", decreasePassengers);
-</script>
 
 </body>
 </html>

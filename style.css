@@ -31,6 +31,11 @@ header{
 .logo_text{
 	font-size: 86px;
 	color: white;
+	text-decoration: none;
+	transition: all 200ms ease; 
+}
+.logo_text:hover{
+	border: 2px solid #888686;
 }
 
 
@@ -68,7 +73,7 @@ footer{
 	align-items: center;
 
 	margin-top: 5.3%;
-	height: 240px;
+	height: 150px;
 
 	background-color: #353636;
 	color: white;
@@ -112,6 +117,7 @@ footer{
 	flex-direction: column;
 
 	width: 100%;
+	margin-bottom: 36px;
 }
 
 
@@ -136,7 +142,7 @@ button{
 	font-size: 46px;
 	color: white;
 }
-/*--------------------*/
+/*XXXXXXXXXXXXXXXXXX--*/
 
 
 
@@ -150,9 +156,6 @@ button{
 /*карточка поиска билетов*/
 .input_search[type=text]{
 	margin-bottom: 3.4%;
-}
-.input_search{
-	width: 98.8%;
 }
 
 .card_data_input{
@@ -175,9 +178,7 @@ button{
 .btn_search{
 	width: 44.3%;
 }
-input[type=number]{
-	width: 14.6%;
-}
+
 .input_ticket{
 	width: 30%;
 	color: #A6A6A6;
@@ -209,9 +210,8 @@ input[type=number]{
 	flex-wrap: wrap;
 	justify-content: left;
 }
-input[type=email]{
-	margin-right: 4.1%;
-}
+
+
 
 .graphics{
 	width: 100%;
@@ -253,7 +253,34 @@ input[type=email]{
 .passager_num_buttons{
 }
 
+.booking_card{
+	width: 40%;
+}
 
+.booking_data{
+	font-size: 32px;
+	font-weight: normal;
+}
+
+.booking_input{
+	padding: 25px;
+	background-color: #ECECEC;
+	border-radius: 12px;
+	margin-bottom: 30px;
+}
+
+.booking_activity{
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 70px;
+
+}
+
+.booking_price{
+	font-size: 32px;
+	margin-bottom: 30px;
+}
 
 /*Seat*/
 
