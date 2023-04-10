@@ -1,20 +1,26 @@
 /*Общие стили*/
+/*Устанавливаем отсутпы для body*/
 body{
-	margin: 0;/*убирает автоматические боковые отступы у сайта*/
+	margin: 0;
+	/*убирает автоматические боковые отступы у сайта*/
 	font-family:'Inter', sans-serif;
 	background-color: #F5F5F5;
 	font-size: 26px;
 }
+
+/*Устанавливаем отступы для p*/
 p{
 	margin: 0;
 }
 
+/*Устанавливаем стиль для hr*/
 hr{
 	margin-top: 36px;
 	color: #d9d9d9;
 	width: 100%;
 }
 
+/*Устанавливаем стиль для header*/
 header{
 	display: flex;
 	justify-content: space-around;
@@ -26,20 +32,25 @@ header{
 	box-shadow: 0px 0px 5px black
 }
 
+/*Устанавливаем стиль для логотипа*/
 .logo{
 	width: 196px;
 }
 
+/*Устанавливаем стиль для изобраежния логотипа*/
 .logo_img{
 	width: 100%;
 }
 
+/*Устанавливаем стиль для текста логотипа*/
 .logo_text{
 	font-size: 86px;
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
 }
+
+/*Устанавливаем стиль для линии подчеркивания при наведении на текст логотипа*/
 .line{
 	background-color: white;
 	height: 2px;
@@ -47,19 +58,20 @@ header{
 	transition: all 200ms ease; 
 	opacity: 0;
 }
+
+/*Устанавливаем стиль для линии подчеркивания при наведении на текст логотипа*/
 .logo_text:hover + .line{
 	opacity: 1;
-	
 }
 
-
+/*Устанавливаем стиль для навигационного меню*/
 nav{
 	display: flex;
 	flex-direction: column;
 	width: 330px;
-
 }
 
+/*Устанавливаем стиль для ссылок в навигационном меню*/
 .header_link{
 	display: inline-block;
 	list-style: none;
@@ -75,12 +87,13 @@ nav{
 	transition: all 100ms ease; 
 }
 
+/*Устанавливаем стиль для наведения на ссылки*/
 .header_link:hover{
 	padding-top: 0.5vh;
 	border: 2px solid white;
 }
 
-
+/*Устанавливаем стиль для основного контента*/
 main{
 	display: flex;
 	flex-wrap: wrap;
@@ -88,6 +101,7 @@ main{
 
 }
 
+/*Устанавливаем стиль для футера*/
 footer{
 	display: flex;
 	justify-content: space-around;
@@ -101,16 +115,20 @@ footer{
 
 	font-size: 36px;
 }
+
+/*Устанавливаем стиль для текста футера*/
 .footer_text{
 	height: 0;
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+/*Устанавливаем стиль для ссылки "Карта сайта"*/
 .map{
 	text-decoration: underline;
 }
 
-/*Карточки*/
+/*Устанавливаем стиль для карточек*/
 .card{
 	display: flex;
 	flex-direction: column;
@@ -125,6 +143,7 @@ footer{
 	border-radius: 12px;
 }
 
+/*Устанавливаем стиль для заголовка карточки*/
 .card_title{
 	margin-top: 44px;
 	margin-bottom: 64px;
@@ -133,6 +152,7 @@ footer{
 	font-weight: bold;
 }
 
+/*Устанавливаем стиль для данных в карточке*/
 .card_data{
 	display: flex;
 	flex-direction: column;
@@ -140,13 +160,15 @@ footer{
 	width: 100%;
 	margin-bottom: 36px;
 }
+
+/*Устанавливаем стиль для формы ввода данных в карточке*/
 .card_data_input{
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 9.4%;
 }
 
-
+/*Устанавливаем стиль для текстового поля ввода*/
 input{
 	height: 64px;
 	border-radius: 12px;
@@ -156,6 +178,7 @@ input{
 	font-size: 30px;
 }
 
+/*Устанавливаем стиль для кнопок*/
 button{
 	width: auto;
 	padding-left: 25px;
@@ -168,20 +191,21 @@ button{
 	font-size: 46px;
 	color: white;
 }
+
+/*Устанавливаем стиль для активной кнопки*/
 button:active{
 	background-color:#1E7CC7;
 }
-/*XXXXXXXXXXXXXXXXXX--*/
 
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 
-
-/*Landing Page*/
+/*home page*/
+/*Устанавливаем стиль для вертикальной карточки, используемой на Landing Page*/
 .card_vertical{
 	width: 377px;
-
 }
 
-/*карточка поиска билетов*/
+/*Устанавливаем стиль для поля ввода даты рождения в карточке поиска билетов*/
 .input_search[type=text]{
 	margin-bottom: 3.4%;
 }
@@ -189,7 +213,7 @@ button:active{
 	margin-bottom: 3.4%;
 }
 
-
+/*Устанавливаем стиль для поля ввода количества билетов в карточке поиска билетов*/
 .div_num_ticket{
 	display: flex;
 	justify-content: space-between;
@@ -197,30 +221,36 @@ button:active{
 	margin-bottom: 9.4%;
 }
 
+/* Устанавливает размер шрифта для класса .btn_search */
 .btn_search{
 	font-size: 24px;
-	width: 48px
+	/* Устанавливает ширину элемента с классом .btn_search */
+	width: 48px;
+	/* Устанавливает высоту элемента с классом .btn_search(имеет опечатку, должно быть 'height')*/
 	heighth: 48px;
 }
 
+/* Устанавливает ширину элемента с классом .input_ticket и цвет текста */
 .input_ticket{
 	width: 40%;
 	color: #A6A6A6;
 }
 
-
+/* Устанавливает для контейнера div свойства для выравнивания элементов по центру и отображения их в строку */
 .div_action{
 	align-items: center;
 	display: flex;
 	margin-bottom: 5%;
 }
+/* Определяет размеры и скругление углов для изображения */
 .img_action{
 	width: 20%;
 	height: 100%;
 	border-radius: 12px;
-
+	/* Устанавливает отступ справа от изображения */
 	margin-right: 5%;
 }
+/* Устанавливает ширину для текстового блока */
 .txt_action{
 	width: 85%;
 	margin-top: 0;
@@ -228,6 +258,7 @@ button:active{
 
 }
 
+/* Создает блок для отображения списка активностей и устанавливает гибкость элементов */
 .activity{
 	width: 100%;
 	display: flex;
@@ -235,51 +266,54 @@ button:active{
 	justify-content: left;
 	margin-top: 36px;
 }
+/* Устанавливает размер шрифта для заголовка списка активностей и отступ снизу */
 .activity_text{
 	width: 100%;
 	font-size: 36px;
 	margin-bottom: 25px;
 }
 
-
+/* Задает размеры для блока графика и столбцов */
 .graphics{
 	width: 100%;
 	height: 437px;
 }
-.column_graphics{
-	
 
-}
+/* Определяет фон и размер для первого столбца графика */
 .column1_1{
 	background-color: rgba(160, 140, 251, .2);
 	width: 5%;
 	height: 100%;
 	
 }
+/* Определяет фон и размер для второго столбца графика */
 .column1_2{
 	background-color: #B09FFF;
 	width: 100%;
 	height: 60%;
 
 }
-
-/*Search*/
-
+/* Задает выравнивание текста и стилевые свойства для каждой строк таблицы */
+/* Определяет цвет фона при наведении курсора на строку таблицы */
 tr{
 	text-align: center;
 }
 tr:hover{
 	background-color: #E5FFF3;}
+/* Определяет цвет фона при клике на строку таблицы */
 tr:active{
 	background-color: #21F38E;
 }
+/* Определяет отступы для каждой ячейки таблицы */
 td{
 	padding: 10px;
 }
+/* Определяет отступы для заголовков таблицы */
 th{
 	padding-right: 20px;
 }
 
+/* Задает позиционирование и размеры для блока с кнопками в таблице */
 .table_button{
 	position: fixed;
 	bottom: 0;
@@ -287,31 +321,36 @@ th{
 	margin-bottom: 10%;
 	margin-left: 2%;
 }
-/*Booking*/
 
+/* Определяет размер и размер шрифта для кнопок на карте бронирования */
 .button_booking{
 	padding: 0;
 	width: 30px;
 	font-size: 30px;
 }
 
+/* Устанавливает свойства для блока с кнопками выбора количества пассажиров */
 .frame_booking_buttons{
 	display: flex;
 	justify-content: space-between;
 }
 
+/* Создает класс для блока с выбором количества пассажиров */
 .passager_num_buttons{
 }
 
+/* Задает размеры для контейнера карточки бронирования */
 .booking_card{
 	width: 40%;
 }
 
+/* Определяет размер шрифта и нормальное начертание для содержимого блока booking_data */
 .booking_data{
 	font-size: 32px;
 	font-weight: normal;
 }
 
+/* Задает отступы, цвет фона и скругление углов для блока booking_input */
 .booking_input{
 	padding: 25px;
 	background-color: #ECECEC;
@@ -319,6 +358,7 @@ th{
 	margin-bottom: 30px;
 }
 
+/* Создает блок booking_activity и задает ему расположение элементов */
 .booking_activity{
 	display: flex;
 	flex-direction: column;
@@ -327,36 +367,46 @@ th{
 
 }
 
+/* Устанавливает размеры шрифта для блока booking_price и отступ снизу */
 .booking_price{
 	font-size: 32px;
 	margin-bottom: 30px;
 }
 
-/*Seat*/
-
+/* Задает свойства элементов блока Seat */
+/* Определяет отступы между рядами */
 .row{
 	display: flex;
 	margin-bottom: 24px;
 }
 
+/* Определяет размеры и стиль кнопок в блоке Seat */
 .seat_button{
 	padding: 0;
 	width: 48px;
 	height: 48px;
 	font-size: 36px;
 }
+
+/* Определяет свойства для кнопки, если место доступно */
 .seat_enabled{
 	background-color: #21F38E;
 	border: 2px solid #2ABC76;
 }
+
+/* Определяет свойства для кнопки, если место занято */
 .seat_disabled{
 	background-color: #F32160;
 	border: 2px solid #A9244C;
 }
+
+/* Определяет свойства для кнопок, на которых указан номер места */
 .seat_num{
 	background-color: #A6A6A6;
 	border: 2px solid #888686;
 }
+
+/* Определяет свойства для кнопок, на которых указан номер ряда */
 .seat_num_row{
 	color: #A6A6A6;
 	background-color: #FFFFFF;
@@ -364,6 +414,7 @@ th{
 
 }
 
+/* Устанавливает выравнивание текста, цвет и размер шрифта для заголовков рядов */
 .title_row{
 	text-align: center;
 	margin: 0;
@@ -376,6 +427,7 @@ th{
 	padding-right: 18px;
 }
 
+/* Создает блоки notations_1 и notations_2 и задает им размеры и расположение элементов */
 .notations_1{
 	display: flex;
 	flex-direction: column;
@@ -386,6 +438,7 @@ th{
 	margin-bottom: 9.4%;
 }
 
+/* Создает класс для блоков с пользовательскими комментариями */
 .notations_input{
 	display: flex;
 	align-items: center;
