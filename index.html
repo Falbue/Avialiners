@@ -1,15 +1,23 @@
+<!-- Объявление типа документа -->
 <!DOCTYPE html>
+<!-- Начало основной структуры страницы -->
 <html>
 <head>
+	<!-- Установка кодировки для отображения текста -->
 	<meta charset="utf-8">
+	<!-- Установка масштабирования страницы для маленьких экранов -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Подключение файла стилей для страницы -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Подключение файла скриптов для страницы -->
 	<script src="script.js"></script>
+	<!-- Установка заголовка страницы -->
 	<title>Landing page</title>
 </head>
 <body>
-
+	<!-- Начало верхней части страницы -->
 	<header>
+		<!-- Логотип и название компании -->
 		<div class="logo">
 			<img class="logo_img" src="lib/logo.png">
 		</div>
@@ -17,6 +25,7 @@
 			<p class="logo_text">Avialiners</p>
 			<div class="line"></div>
 		</div>
+		<!-- Навигационное меню -->
 		<nav>
 			<div>
 				<a class="header_link" href="action.html">Акции</a>
@@ -31,10 +40,13 @@
 	</header>
 
 	<main>
+		<!-- Первая карточка в вертикальном блоке -->
 		<div class="card_vertical">
 			<div class="card">
+				<!-- Название карточки -->
 				<p class="card_title">Поиск перелётов</p>
 				<div class="card_data">
+					<!-- Поля для заполнения мест отправления и прибытия, даты вылета и количества билетов -->
 					<div class="card_data_input">
 						<input class="input_search" type="text" placeholder="Откдуа:" required>
 						<input class="input_search" type="date">
@@ -51,16 +63,17 @@
 						</div>
 						<input type="number" id="ticketCount" min="1" max="8" style="width: 50px;" title="1">
 					</div>
+					<!-- Кнопка для отправки данных на страницу поиска -->
 					<button onclick="document.location='search.html'">Найти</button>
 				</div>
 			</div>
 
-
-
-
+			<!-- Вторая карточка в вертикальном блоке -->
 			<div class="card" style="margin-top: 50px;">
+				<!-- Название карточки -->
 				<p class="card_title">Визуализация</p>
 				<div class="card_data">
+					<!-- Графики и поля для выбора параметров -->
 					<div class="graphics">
 						<div class="column_grahpics column1_1">
 							<div class="column_grahpics column1_2">
@@ -74,11 +87,12 @@
 			</div>
 		</div>
 
-
-
+		<!-- Карточка с акциями -->
 		<div class="card" style="width: 60%;">
+			<!-- Название карточки -->
 			<p class="card_title">Акции</p>
 			<div class="card_data">
+				<!-- Блоки с описанием акций -->
 				<div class="div_action">
 					<img class="img_action" src="lib/actions/kaliningrad.png">
 					<p class="txt_action">Калининград - это город, который привлекает туристов со всего мира своей уникальной атмосферой и прекрасными пейзажами. В городе много зеленых насаждений, красивых парков и скверов, которые создают уютную атмосферу и делают прогулки по городу особенно приятными.</p>
@@ -91,11 +105,11 @@
 					<img class="img_action" src="lib/actions/sunrise.png">
 					<p class="txt_action">Пляж Санрайз - это идеальное место для путешественников, которые ищут приключения и новые впечатления. Здесь можно заняться сноркелингом, дайвингом, серфингом или просто насладиться красотой природы. Кроме того, пляж Санрайс предлагает множество различных развлечений, таких как катание на лодках, рыбалка и водные прогулки.</p>
 				</div>
-
 				<div class="div_action">
 					<img class="img_action" src="lib/actions/nurai.png">
 					<p class="txt_action">Пляж Zaya Nurai является одним из самых роскошных пляжей на планете. Это приватный остров, расположенный в 10 минутах езды на лодке от Саадийат Айленд в Абу-Даби. Пляж имеет кристально-чистую воду, белый песок и прекрасный вид на Персидский залив.</p>
 				</div>
+				<!-- Кнопка "Подробнее" и форма подписки на новости -->
 				<button style="width: fit-content;";>Подробнее</button>
 				<hr>
 				<div class="activity">
@@ -105,20 +119,13 @@
 				</div>
 			</div>
 		</div>
-
-		
-
 	</main>
 
-
-
+	<!-- Нижняя часть страницы с контактной информацией и картой сайта -->
 	<footer>
 		<p class="footer_text">Телефон: 8 (800) 100-10-10</p>
 		<p class="footer_text">© 2023 Avialiners</p>
 		<a class="footer_text map">Карта сайта</a>
 	</footer>
-
-
 </body>
 </html>
-
