@@ -1,31 +1,31 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Объявление типа документа -->
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="script.js"></script>
-	<title>Booking</title>
+	<meta charset="utf-8"> <!-- Указание кодировки документа -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Указание настроек viewport для масштабирования страницы на мобильных устройствах -->
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- Подключение CSS-файла -->
+	<script src="script.js"></script> <!-- Подключение скриптов -->
+	<title>Booking</title> <!-- Заголовок страницы -->
 </head>
 <body>
 
-	<header>
-		<div class="logo">
-			<img class="logo_img" src="lib/logo.png">
+	<header> <!-- Блок шапки сайта -->
+		<div class="logo"> <!-- Блок логотипа -->
+			<img class="logo_img" src="lib/logo.png"> <!-- Изображение логотипа -->
 		</div>
 		<div>
-			<a class="logo_text" href="index.html">Avialiners</a>
-			<div class="line"></div>
+			<a class="logo_text" href="index.html">Avialiners</a> <!-- Текстовый логотип с гиперссылкой -->
+			<div class="line"></div> <!-- Разделительная линия -->
 		</div>
-		<nav>
+		<nav> <!-- Навигационное меню -->
 			<div>
-				<a class="header_link" href="action.html">Акции</a>
+				<a class="header_link" href="action.html">Акции</a> <!-- Ссылка на страницу "Акции" -->
 			</div>
 			<div>
-				<a class="header_link" href="search.html">Поиск</a>
+				<a class="header_link" href="search.html">Поиск</a> <!-- Ссылка на страницу "Поиск" -->
 			</div>
 			<div>
-				<a class="header_link" href="registration.html">Регистрация на рейс</a>
+				<a class="header_link" href="registration.html">Регистрация на рейс</a> <!-- Ссылка на страницу "Регистрация на рейс" -->
 			</div>
 		</nav>
 	</header>
@@ -34,44 +34,44 @@
 
 
 	<main>
-		<div class="card booking_card">
-			<p class="card_title">Данные рейса</p>
-			<div class="card_data booking_data">
+		<div class="card booking_card"> <!-- Блок с информацией о рейсе -->
+			<p class="card_title">Данные рейса</p> <!-- Заголовок блока информации о рейсе -->
+			<div class="card_data booking_data"> <!-- Блок данных о рейсе -->
 				<div class="booking_input">
-					<p style="margin-bottom: 26px;">Номер рейса: XXX XXX</p>
+					<p style="margin-bottom: 26px;">Номер рейса: XXX XXX</p> <!-- Текст с номером рейса -->
 					<div style="margin-bottom: 26px;">
-						<p>Грод вылета: XXX XXX</p>
-						<p>Аэропорт: XXX XXX</p>
+						<p>Грод вылета: XXX XXX</p> <!-- Текст с городом вылета -->
+						<p>Аэропорт: XXX XXX</p> <!-- Текст с названием аэропорта вылета -->
 					</div>
 					<div style="margin-bottom: 26px;">
-						<p>Город назначения: XXX XXX</p>
-						<p>Аэропорт: XXX XXX</p>
+						<p>Город назначения: XXX XXX</p> <!-- Текст с городом назначения -->
+						<p>Аэропорт: XXX XXX</p> <!-- Текст с названием аэропорта назначения -->
 					</div>
 				</div>
 
 				<div class="booking_input">
 					<div style="margin-bottom: 26px;">
-						<p>Город назначения: XXX XXX</p>
-						<p>Аэропорт: XXX XXX</p>
+						<p>Город назначения: XXX XXX</p> <!-- Текст с городом назначения -->
+						<p>Аэропорт: XXX XXX</p> <!-- Текст с названием аэропорта назначения -->
 					</div>
-					<p>Время прибытия: --:--</p>
+					<p>Время прибытия: --:--</p> <!-- Текст с временем прибытия -->
 				</div>
-				<p style="padding-left: 25px;"><b>Стоимость:</b> XXX XXX</p>
+				<p style="padding-left: 25px;"><b>Стоимость:</b> XXX XXX</p> <!-- Текст со стоимостью билета -->
 			</div>
 		</div>
 
 
-		<div class="card">
-			<p class="card_title">Данные пассажиров</p>
-			<div class="card_data">
+		<div class="card"> <!-- Блок с данными о пассажирах -->
+			<p class="card_title">Данные пассажиров</p> <!-- Заголовок блока информации о пассажирах -->
+			<div class="card_data"> <!-- Блок данных о пассажирах -->
 				<div class="card_data_input">
-					<input class="input_search" type="text" placeholder="Имя:">
-					<input type="text" placeholder="Фамилия:">
+					<input class="input_search" type="text" placeholder="Имя:"> <!-- Поле ввода имени пассажира -->
+					<input type="text" placeholder="Фамилия:"> <!-- Поле ввода фамилии пассажира -->
 				</div>
 				<div>
 					<div class="card_data_input">
-						<input class="input_search" type="date" placeholder="Дата рождения:">
-						<input type="" placeholder="Номер документа:">
+						<input class="input_search" type="date" placeholder="Дата рождения:"> <!-- Поле ввода даты рождения пассажира -->
+						<input type="" placeholder="Номер документа:"> <!-- Поле ввода номера документа пассажира -->
 					</div>
 				</div>
 
@@ -79,17 +79,17 @@
 					<div class="frame_booking_buttons">
 						<div></div>
 						<div class="passager_num_buttons">
-							<button class="button_booking">1</button>
-							<button class="button_booking">2</button>
+							<button class="button_booking">1</button> <!-- Кнопка выбора количества пассажиров (1) -->
+							<button class="button_booking">2</button> <!-- Кнопка выбора количества пассажиров (2) -->
 						</div>
 						<div>
-							<button class="button_booking" onclick="addPassenger()">+</button>
-							<button class="button_booking" onclick="removePassanger()">-</button>
+							<button class="button_booking" onclick="addPassenger()">+</button> <!-- Кнопка добавления пассажира -->
+							<button class="button_booking" onclick="removePassanger()">-</button> <!-- Кнопка удаления пассажира -->
 						</div>
 					</div>
 					<div class="booking_activity">
-						<p class="booking_price"><b>Итого:</b> XXX XXX</p>
-						<button onclick="document.location='booking_management.html'">Оформить</button>
+						<p class="booking_price"><b>Итого:</b> XXX XXX</p> <!-- Текст с итоговой стоимостью билетов -->
+						<button onclick="document.location='booking_management.html'">Оформить</button> <!-- Кнопка перехода на страницу оформления билетов -->
 					</div>
 				</div>
 			</div>
@@ -98,10 +98,10 @@
 
 
 
-	<footer>
-		<p class="footer_text">Телефон: 8 (800) 100-10-10</p>
-		<p class="footer_text">© 2023 Avialiners</p>
-		<a class="footer_text map">Карта сайта</a>
+	<footer> <!-- Блок подвала сайта -->
+		<p class="footer_text">Телефон: 8 (800) 100-10-10</p> <!-- Текст с контактным телефоном -->
+		<p class="footer_text">© 2023 Avialiners</p> <!-- Текст с годом создания компании -->
+		<a class="footer_text map">Карта сайта</a> <!-- Ссылка на карту сайта -->
 	</footer>
 
 

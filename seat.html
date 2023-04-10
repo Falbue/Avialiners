@@ -1,30 +1,30 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!-- указываем тип документа -->
+<html> <!-- начало html документа -->
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Seat</title>
+	<meta charset="utf-8"> <!-- указываем кодировку страницы -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- указываем параметры для масштабирования страницы на разных устройствах -->
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- подключаем внешний файл со стилями -->
+	<title>Seat</title> <!-- заголовок вкладки -->
 </head>
-<body>
+<body><!-- начало тела документа -->
 
-	<header>
-		<div class="logo">
-			<img class="logo_img" src="lib/logo.png">
+	<header><!-- верхняя часть сайта -->
+		<div class="logo"> <!-- логотип сайта -->
+			<img class="logo_img" src="lib/logo.png"> <!-- изображение логотипа -->
 		</div>
-		<div>
+		<div><!-- текстовое название сайта -->
 			<a class="logo_text" href="index.html">Avialiners</a>
-			<div class="line"></div>
+			<div class="line"></div> <!-- линия-разделитель между логотипом и текстом названия -->
 		</div>
-		<nav>
+		<nav><!-- навигационная панель -->
 			<div>
-				<a class="header_link" href="action.html">Акции</a>
+				<a class="header_link" href="action.html">Акции</a> <!-- ссылка на страницу с акциями -->
 			</div>
 			<div>
-				<a class="header_link" href="search.html">Поиск</a>
+				<a class="header_link" href="search.html">Поиск</a> <!-- ссылка на страницу поиска рейсов -->
 			</div>
 			<div>
-				<a class="header_link" href="registration.html">Регистрация на рейс</a>
+				<a class="header_link" href="registration.html">Регистрация на рейс</a> <!-- ссылка на страницу регистрации на рейс -->
 			</div>
 		</nav>
 	</header>
@@ -33,15 +33,15 @@
 
 
 
-	<main>
-		<div class="card">
-			<p class="card_title">Выбор места</p>
-			<div class="card_data">
-				<div class="seats seats_one">
-					<div class="row">
-						<button class="seat_button start"  style="margin-right: 14px;">1</button>
+	<main><!-- основное содержимое сайта -->
+		<div class="card"><!-- блок для выбора места -->
+			<p class="card_title">Выбор места</p><!-- заголовок блока -->
+			<div class="card_data"><!-- содержимое блока -->
+				<div class="seats seats_one"><!-- первый блок мест -->
+					<div class="row"><!-- первый ряд мест -->
+						<button class="seat_button start"  style="margin-right: 14px;">1</button><!-- кнопка выбора места -->
 						<button class="seat_button">2</button>
-						<p class="title_row">1</p>
+						<p class="title_row">1</p><!-- номер ряда -->
 						<button class="seat_button">3</button>
 						<button class="seat_button end" style="margin-left: 14px;">4</button>
 					</div>
@@ -82,7 +82,7 @@
 					</div>		
 				</div>
 
-				<div class="seats seats_two" style="margin-top: 96px;">
+				<div class="seats seats_two" style="margin-top: 96px;"><!-- второй блок мест -->
 					<div class="row">
 						<button class="seat_button start" style="margin-right: 14px;">25</button>
 						<button class="seat_button">26</button>
@@ -130,10 +130,10 @@
 		</div>
 
 
-		<div class="card">
+		<div class="card"><!-- блок с обозначениями мест -->
 			<div class="card_data">
-				<p class="card_title notation_seat" style="text-align: left;">Обозначения:</p>
-				<div class="notations_1">
+				<p class="card_title notation_seat" style="text-align: left;">Обозначения:</p><!-- заголовок блока -->
+				<div class="notations_1"><!-- первый блок обозначений -->
 					<div class="notations_input">
 						<button class="seat_button"></button>
 						<p class="notations_text">Свободное место</p>
@@ -147,7 +147,7 @@
 						<p class="notations_text">Место занято</p>
 					</div>
 				</div>
-				<div class="notations_2">
+				<div class="notations_2"><!-- второй блок обозначений -->
 					<div class="notations_input">
 						<button class="seat_button seat_num">1</button>
 						<p class="notations_text">Номер сиденья</p>
@@ -157,13 +157,13 @@
 						<p class="notations_text">Номер ряда</p>
 					</div>
 				</div>
-				<button onclick="document.location='booking_management.html'">Продолжить</button>
+				<button onclick="document.location='booking_management.html'">Продолжить</button><!-- кнопка перехода к следующей странице -->
 			</div>
 		</div>
 
 
-		<div class="card" style="width: 770px;">
-			<p class="card_title">Информация о местах</p>
+		<div class="card" style="width: 770px;"><!-- блок с информацией о местах -->
+			<p class="card_title">Информация о местах</p><!-- заголовок блока -->
 			<div class="card_data" style="margin-bottom: 25px;">
 				<p><b>1 ряд</b> места 1, 2, 3 и 4. Позиция перегородки и стенки бортовой кухни таковы, что места для ног может быть не очень много. Также откидные столики вмонтированы в один из подлокотников, тем самым сделав его недвижимым. Ну и ко всему- не очень комфортно весь полет смотреть в стену.<br> <br>
 					<b>6 ряд</b> За этим рядом находятся аварийные выходы, из-за этого обстоятельства спинки кресел не откидываются или сильно ограничены в этом. Также может быть немного прохладно в этом ряду.<br><br>
@@ -177,12 +177,12 @@
 
 
 
-	<footer>
-		<p class="footer_text">Телефон: 8 (800) 100-10-10</p>
-		<p class="footer_text">© 2023 Avialiners</p>
-		<a class="footer_text map">Карта сайта</a>
+	<footer><!-- нижняя часть сайта -->
+		<p class="footer_text">Телефон: 8 (800) 100-10-10</p><!-- контактный телефон -->
+		<p class="footer_text">© 2023 Avialiners</p><!-- год и наименование компании-владельца сайта -->
+		<a class="footer_text map">Карта сайта</a><!-- ссылка на карту сайта -->
 	</footer>
 
 
-</body>
-</html>
+</body><!-- конец тела документа -->
+</html><!-- конец html документа -->
